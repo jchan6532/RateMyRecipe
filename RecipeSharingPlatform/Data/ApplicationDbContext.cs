@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using RecipeSharingPlatform.Models;
 
 namespace RecipeSharingPlatform.Data
 {
@@ -12,5 +13,6 @@ namespace RecipeSharingPlatform.Data
             : base(options)
         {
         }
+        public DbSet<RecipeSharingPlatform.Models.Recipe> Recipe { get; set; }
     }
 }
